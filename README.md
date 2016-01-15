@@ -10,9 +10,7 @@ DONE
 
 Use Eclipse ... but how?  Do you know Ben?
 
-Ben: I don't know how to incorporate spark and scala from centos with eclipse and its scala plugin.
-
-This a very helpful [writeup](http://www.nodalpoint.com/development-and-deployment-of-spark-applications-with-scala-eclipse-and-sbt-part-1-installation-configuration/#comments) to but it's a fresh install of spark. I don't know how to make components talk to each other.
+Ben: I don't know how to incorporate spark and scala from centos with eclipse and its scala plugin but this a very helpful [writeup](http://www.nodalpoint.com/development-and-deployment-of-spark-applications-with-scala-eclipse-and-sbt-part-1-installation-configuration/#comments) on how to set up a development framework using eclipse, scala, spark, and sbt. It requires a fresh install of spark -- seems unnecessary since spark is already installed on centos.
 
 Sbt:
 sbt stands for simple build tool - I believe it's a way of building scala (and maybe spark) projects. Have to specify dependencies and structure.

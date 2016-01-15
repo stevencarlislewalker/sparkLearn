@@ -1,5 +1,5 @@
 # sparkLearn
-
+Ben made it
 Figuring out logistic regression and decision trees in spark.
 
 #### Get spark-shell working

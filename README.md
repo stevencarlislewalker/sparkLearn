@@ -31,6 +31,8 @@ sudo yum install sbt
 
 `spark-submit`
 
+What we want from this:  Make deployed Spark apps
+
 #### Load in our test data set
 
 * We only need one -- Census.
@@ -38,5 +40,4 @@ sudo yum install sbt
 * Do this as a spark DataFrame?
 
 #### Try out logistic regression
-
 

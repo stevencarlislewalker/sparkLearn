@@ -10,6 +10,14 @@ Figuring out logistic regression and decision trees in spark.
 
 DONE
 
+outline of how we did it:
+
+1. cloudera virtual box
+2. comes with lots of big data tools, including spark etc...
+3. `spark-shell` is on the path (not `spark`)
+4. if we can't find `sqlContext`, diagnose with cloudera browser-based tools
+5. where's `scala`??
+
 #### Development environment / workflow setup
 
 ##### Use Eclipse 

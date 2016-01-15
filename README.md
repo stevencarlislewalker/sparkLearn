@@ -16,6 +16,7 @@ sbt stands for simple build tool - I believe it's how scala (and maybe spark) pr
 The website is http://www.scala-sbt.org/0.13/docs/Installing-sbt-on-Linux.html. Centos is redhat so just run
 
 curl https://bintray.com/sbt/rpm/rpm | sudo tee /etc/yum.repos.d/bintray-sbt-rpm.repo
+
 sudo yum install sbt
 
 #### Writing compiled Spark programs

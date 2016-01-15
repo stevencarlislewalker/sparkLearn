@@ -1,8 +1,23 @@
 # sparkLearn
 
-Hey Ben.  Here's the repo.
+Figuring out logistic regression and decision trees in spark.
 
-Something new.
+## Get spark-shell working
 
-Still trying.
+DONE
+
+## Development environment / workflow setup
+
+Use Eclipse ... but how?  Do you know Ben?
+
+## Writing compiled Spark programs
+
+## Load in our test data set
+
+* We only need one -- Census.
+* Can we just drag and drop to the VM?
+* Do this as a spark DataFrame?
+
+## Try out logistic regression
+
 

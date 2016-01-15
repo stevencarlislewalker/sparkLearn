@@ -25,8 +25,7 @@ sudo yum install sbt
 
 #### Writing compiled Spark programs
 
-* `spark-submit`
-* Need `sbt` (FIXME:  yum command?)
+`spark-submit`
 
 #### Load in our test data set
 

@@ -39,7 +39,8 @@ sudo yum install sbt
 
 `spark-submit`
 
-What we want from this:  Make deployed Spark apps
+1. What we want from this:  Make deployed Spark apps
+2. Task:  understand dependencies for building spark/scala standalones (i.e. what is spark exactly?  is it just a 'package' for scala?
 
 #### Load in our test data set
 

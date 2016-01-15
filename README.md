@@ -12,7 +12,9 @@ Use Eclipse ... but how?  Do you know Ben?
 Ben: I don't know how to incorporate spark and scala from centos with eclipse and its scala plugin.
 
 sbt stands for simple build tool - I believe it's how scala (and maybe spark) projects get created. Have to specify dependencies and structure.
-The website is http://www.scala-sbt.org/0.13/docs/Installing-sbt-on-Linux.html. Centos is redhat so just rund
+
+The website is http://www.scala-sbt.org/0.13/docs/Installing-sbt-on-Linux.html. Centos is redhat so just run
+
 curl https://bintray.com/sbt/rpm/rpm | sudo tee /etc/yum.repos.d/bintray-sbt-rpm.repo
 sudo yum install sbt
 

@@ -1,5 +1,5 @@
 # sparkLearn
-Ben made it
+
 Figuring out logistic regression and decision trees in spark.
 
 #### Get spark-shell working
@@ -11,6 +11,9 @@ DONE
 Use Eclipse ... but how?  Do you know Ben?
 
 #### Writing compiled Spark programs
+
+* `spark-submit`
+* Need `sbt` (FIXME:  yum command?)
 
 #### Load in our test data set
 

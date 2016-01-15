@@ -31,7 +31,7 @@ sudo yum install sbt
 #### Load in our test data set
 
 * We only need one -- Census.
-* Can we just drag and drop to the VM?
+* Can we just drag and drop to the VM?  I think so [http://www.howtogeek.com/187535/how-to-copy-and-paste-between-a-virtualbox-host-machine-and-a-guest-machine/]
 * Do this as a spark DataFrame?
 
 #### Try out logistic regression

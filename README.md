@@ -2,6 +2,10 @@
 
 Figuring out logistic regression and decision trees in spark.
 
+#### Resources
+
+[good ebook maybe](https://jaceklaskowski.gitbooks.io/mastering-apache-spark/)
+
 #### Get spark-shell working
 
 DONE

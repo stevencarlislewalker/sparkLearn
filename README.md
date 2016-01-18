@@ -28,6 +28,8 @@ outline of how we did it:
 
 [spark-csv](https://github.com/databricks/spark-csv)
 
+The basic idea is to call `spark-shell` with the `--packages` option.
+
 #### Development environment / workflow setup
 
 ##### Use Eclipse 

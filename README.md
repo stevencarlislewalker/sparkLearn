@@ -33,6 +33,8 @@ outline of how we did it:
 
 #### Get census into a data frame
 
+1. Manage the distributed file system -- e.g. [putCensusOnHDFS](https://github.com/stevencarlislewalker/sparkLearn/blob/master/snipets/putCensusOnHDFS)
+
 ##### Using `spark-csv` library
 
 [spark-csv](https://github.com/databricks/spark-csv)

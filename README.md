@@ -18,6 +18,8 @@ outline of how we did it:
 4. if we can't find `sqlContext`, diagnose with cloudera browser-based tools
 5. where's `scala`??
 
+#### Get census into a data frame
+
 #### Development environment / workflow setup
 
 ##### Use Eclipse 

@@ -1,0 +1,12 @@
+#### ----------------------------------------------------------------------
+#### putting a csv file on a distributed file system
+#### ----------------------------------------------------------------------
+
+hadoop fs -mkdir Census
+hadoop fs -put Census.csv Census
+
+#### ----------------------------------------------------------------------
+#### clean up after yourself
+#### ----------------------------------------------------------------------
+
+hadoop fs ## FIXME: remove the directory on the distributed file system

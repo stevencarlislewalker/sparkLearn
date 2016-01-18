@@ -34,6 +34,8 @@ outline of how we did it:
 #### Get census into a data frame
 
 1. Manage the distributed file system -- e.g. [putCensusOnHDFS](https://github.com/stevencarlislewalker/sparkLearn/blob/master/snipets/putCensusOnHDFS)
+2. Get CSV from distributed file system into an RDD [loadCensus.scala](https://github.com/stevencarlislewalker/sparkLearn/blob/master/snipets/loadCensus.scala)
+3. Convert RDD to DataFrame (e.g. http://spark.apache.org/docs/latest/sql-programming-guide.html#programmatically-specifying-the-schema)
 
 ##### Using `spark-csv` library
 

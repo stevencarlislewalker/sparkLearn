@@ -8,7 +8,7 @@ Figuring out logistic regression and decision trees in spark.
 
 #### Misc problems
 
-* Endless [Application report](http://stackoverflow.com/questions/30828879/application-report-for-application-state-accepted-never-ends-for-spark-submi) -- FIXME: try resetting cloudera browser-based tools
+* Endless [Application report](http://stackoverflow.com/questions/30828879/application-report-for-application-state-accepted-never-ends-for-spark-submi) -- FIXME: try restarting all cloudera services
 
 #### Get spark-shell working
 

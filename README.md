@@ -6,6 +6,10 @@ Figuring out logistic regression and decision trees in spark.
 
 [good ebook maybe](https://jaceklaskowski.gitbooks.io/mastering-apache-spark/)
 
+#### Misc problems
+
+* Endless [Application report](http://stackoverflow.com/questions/30828879/application-report-for-application-state-accepted-never-ends-for-spark-submi) -- FIXME: try resetting cloudera browser-based tools
+
 #### Get spark-shell working
 
 DONE

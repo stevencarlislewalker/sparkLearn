@@ -20,6 +20,10 @@ outline of how we did it:
 
 #### Get census into a data frame
 
+##### Using `spark-csv` library
+
+[spark-csv](https://github.com/databricks/spark-csv)
+
 #### Development environment / workflow setup
 
 ##### Use Eclipse 

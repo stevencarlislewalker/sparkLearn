@@ -21,7 +21,9 @@ while following along with the book and its accompanying source code.
 
 #### Get spark-shell working
 
-DONE
+##### Cloudera
+
+DONE (for steve not ben)
 
 outline of how we did it:
 
@@ -30,6 +32,10 @@ outline of how we did it:
 3. `spark-shell` is on the path (not `spark`)
 4. if we can't find `sqlContext`, diagnose with cloudera browser-based tools
 5. where's `scala`??
+
+##### DIY (e.g. from some ubuntu thing)
+
+FIXME: in progress
 
 #### Get census into a data frame
 
@@ -42,6 +48,8 @@ outline of how we did it:
 [spark-csv](https://github.com/databricks/spark-csv)
 
 The basic idea is to call `spark-shell` with the `--packages` option.
+
+Ben had a success here, but it hasn't been documented yet (TODO).
 
 #### Development environment / workflow setup
 
@@ -62,10 +70,12 @@ sudo yum install sbt
 
 #### Writing compiled Spark programs
 
-`spark-submit`
+[spark-submit](http://spark.apache.org/docs/latest/submitting-applications.html)
 
 1. What we want from this:  Make deployed Spark apps
 2. Task:  understand dependencies for building spark/scala standalones (i.e. what is spark exactly?  is it just a 'package' for scala?
+
+
 
 #### Load in our test data set
 

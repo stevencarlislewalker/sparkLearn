@@ -17,30 +17,37 @@
     * H20 functionality inside Spark cluster
   * Apache Yarn
     * MapReduce 2.0
+
 # Differences between data processing systems
   * http://stackoverflow.com/questions/28082581/what-is-the-differences-between-apache-spark-and-apache-flink
+
 # Terms
   * SaaS: software as a service (SaaS), applications hosted by a vendor or service provider and made available to customers over a network
   * SPOF: single point of failure: i.e. not fully distributed
   * ETL: extract, transform, load
   * MPP: massively parallel processing
+
 # Cassandra
   * An Apache database for big data
   * ColumnFamily-based (not key-value)
   * Fault-tolerant, decentralized, durable, no SPOF
   * Elastic:  read and write throughput increase linearly with new machines
+
 # PredictionIO
   * Open source machine learning server
+
 # Databricks
   * Cluster manager
   * Interactive analysis environment
   * Production pipelines
   * Third-party apps
+
 # Visual point and click model building
   * Pentaho http://www.pentaho.com/labs
   * Platfora
   * Deepsense http://deepsense.io/
     * open source workflow executor
+
 # Apache Maven
   * Project management and comprehension tool
   * Mostly for Java

@@ -1,6 +1,6 @@
 # sparkLearn
 
-Figuring out logistic regression and decision trees in spark. Ben commit from home.
+Figuring out logistic regression and decision trees in spark.
 
 #### Resources
 

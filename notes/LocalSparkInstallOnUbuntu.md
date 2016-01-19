@@ -1,6 +1,8 @@
 *Jan 2016*
 
-Up and running with local instance of spark on ubuntu 15.10. Installing Java, Scala, and Spark. For a local instance of Spark there is no need to install Scala - Spark (prebuilt) comes with Scala (2.10.5). I don't know if you still need to install Java - probably not.
+Up and running with local instance of spark on ubuntu 15.10. Installing Java, Scala, and Spark. For a local instance of Spark there is no need to install Scala - Spark (prebuilt) comes with Scala (2.10.5). I don't know if you still need to install Java - probably not.  
+This is all shamelessly adapted (stolen) from [this writeup](http://mbonaci.github.io/mbo-spark/)
+
 
 ####Instructions - installing java, scala, and spark on Ubuntu-15.10-desktop-amd64
 

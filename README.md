@@ -4,6 +4,8 @@ Figuring out logistic regression and decision trees in spark.
 
 #### Resources
 
+[hadoop shell](https://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-common/FileSystemShell.html)
+
 [good ebook maybe](https://jaceklaskowski.gitbooks.io/mastering-apache-spark/)
 
 ```

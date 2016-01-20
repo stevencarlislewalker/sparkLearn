@@ -49,9 +49,7 @@ FIXME: in progress
 
 [spark-csv](https://github.com/databricks/spark-csv)
 
-The basic idea is to call `spark-shell` with the `--packages` option.
-
-Ben had a success here, but it hasn't been documented yet (TODO).
+The basic idea is to call `spark-shell` with the `--packages` option. See [here](https://github.com/stevencarlislewalker/sparkLearn/blob/master/notes/Localspark-csv.md) for notes on how to do this on a local spark-shell.
 
 #### Development environment / workflow setup
 

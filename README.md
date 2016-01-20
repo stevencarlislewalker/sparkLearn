@@ -4,8 +4,7 @@ Figuring out logistic regression and decision trees in spark.
 
 #### Resources
 
-[Spark MLlib (1.6.0) Documentation](https://github.com/stevencarlislewalker/sparkLearn/blob/master/notes/LocalSparkInstallOnUbuntu.md)  
-
+[Spark MLlib (1.6.0) Documentation](http://spark.apache.org/docs/latest/mllib-guide.html)    
 [hadoop shell](https://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-common/FileSystemShell.html)  
 [good ebook maybe](https://jaceklaskowski.gitbooks.io/mastering-apache-spark/)
 
@@ -26,7 +25,7 @@ while following along with the book and its accompanying source code.
 
 ##### Cloudera
 
-DONE (for steve not ben)
+DONE for steve (for ben [see](https://github.com/stevencarlislewalker/sparkLearn/blob/master/notes/LocalSparkInstallOnUbuntu.md))
 
 outline of how we did it:
 

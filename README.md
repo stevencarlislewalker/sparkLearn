@@ -4,6 +4,8 @@ Figuring out logistic regression and decision trees in spark.
 
 #### Resources
 
+[Spark MLlib (1.6.0) Documentation](http://spark.apache.org/docs/latest/mllib-guide.html)    
+[hadoop shell](https://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-common/FileSystemShell.html)  
 [good ebook maybe](https://jaceklaskowski.gitbooks.io/mastering-apache-spark/)
 
 ```
@@ -23,7 +25,7 @@ while following along with the book and its accompanying source code.
 
 ##### Cloudera
 
-DONE (for steve not ben)
+DONE for steve (for ben [see here](https://github.com/stevencarlislewalker/sparkLearn/blob/master/notes/LocalSparkInstallOnUbuntu.md))
 
 outline of how we did it:
 
@@ -47,9 +49,7 @@ FIXME: in progress
 
 [spark-csv](https://github.com/databricks/spark-csv)
 
-The basic idea is to call `spark-shell` with the `--packages` option.
-
-Ben had a success here, but it hasn't been documented yet (TODO).
+The basic idea is to call `spark-shell` with the `--packages` option. See [here](https://github.com/stevencarlislewalker/sparkLearn/blob/master/notes/Localspark-csv.md) for notes on how to do this on a local spark-shell.
 
 #### Development environment / workflow setup
 
@@ -66,17 +66,6 @@ curl https://bintray.com/sbt/rpm/rpm | sudo tee /etc/yum.repos.d/bintray-sbt-rpm
 
 sudo yum install sbt
 
-
-
-#### Writing compiled Spark programs
-
-[spark-submit](http://spark.apache.org/docs/latest/submitting-applications.html)
-
-1. What we want from this:  Make deployed Spark apps
-2. Task:  understand dependencies for building spark/scala standalones (i.e. what is spark exactly?  is it just a 'package' for scala?
-
-
-
 #### Load in our test data set
 
 * (DONE) We only need one -- Census.
@@ -84,4 +73,13 @@ sudo yum install sbt
 * Do this as a spark DataFrame?
 
 #### Try out logistic regression
+
+#### Try out decision trees
+
+#### Writing compiled Spark programs
+
+[spark-submit](http://spark.apache.org/docs/latest/submitting-applications.html)
+
+1. What we want from this:  Make deployed Spark apps
+2. Task:  understand dependencies for building spark/scala standalones (i.e. what is spark exactly?  is it just a 'package' for scala?
 

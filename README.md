@@ -25,7 +25,7 @@ while following along with the book and its accompanying source code.
 
 ##### Cloudera
 
-DONE for steve (for ben [see](https://github.com/stevencarlislewalker/sparkLearn/blob/master/notes/LocalSparkInstallOnUbuntu.md))
+DONE for steve (for ben [see here](https://github.com/stevencarlislewalker/sparkLearn/blob/master/notes/LocalSparkInstallOnUbuntu.md))
 
 outline of how we did it:
 

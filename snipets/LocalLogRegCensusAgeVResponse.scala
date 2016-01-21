@@ -12,7 +12,7 @@ val census = sqlContext.read.format("com.databricks.spark.csv")
 // model just age against response
 val ageVsResponse = census.select("age", "Response")
 
-//transform Response (yes/no) to (1/0). Don't specify 
+//transform Response (yes/no) to (1/0). Don't yet care how to specify which category is the target.
 import org.apache.spark.ml.feature.StringIndexer
 val indexer = new StringIndexer()
   .setInputCol("Response")

@@ -7,6 +7,12 @@ Figuring out logistic regression and decision trees in spark.
 [Spark MLlib (1.6.0) Documentation](http://spark.apache.org/docs/latest/mllib-guide.html)    
 [hadoop shell](https://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-common/FileSystemShell.html)  
 [good ebook maybe](https://jaceklaskowski.gitbooks.io/mastering-apache-spark/)
+useful code bases  
+- [mllib examples](https://github.com/apache/spark/tree/master/examples/src/main/scala/org/apache/spark/examples)
+- [mllib source code](https://github.com/apache/spark/tree/v1.6.0/mllib/src/main/scala/org/apache/spark)
+Note that mllib is the base library and ml and mllib are subpackages of it.  
+- ml is newer and WILL BE better - supports dataframes and API is set up for pipelines but not as developed as mllib. 
+- mllib is older - supports RDDs and development is shifting away from it but at the moment (1/2016) seems more developed.
 
 ```
 If this is your first time using the Spark shell (or any Scala REPL, for that matter), you

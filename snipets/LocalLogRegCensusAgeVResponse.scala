@@ -27,9 +27,8 @@ import org.apache.spark.mllib.linalg.Vectors
 import org.apache.spark.mllib.regression.LabeledPoint
 
 // to RDD of (label, feature vector), then to DF
-// Do I really need to do this?? If working with data frames shouldn't have to convert back and forth with rdds
-val age = ageVRBinary.map(row => LabeledPoint(row.getDouble(1), Vectors.dense(row.getInt(0))))
-									.toDF("response", ageVRBinary.columns(0))
+// Do I really need to do this?? If working with data frames shouldn't have to convert back and forth with RDDs
+val age = ageVRBinary.map(row => LabeledPoint(row.getDouble(1), Vectors.dense(row.getInt(0)))).toDF("response", ageVRBinary.columns(0))
 
 
 import org.apache.spark.ml.classification.LogisticRegression
@@ -39,3 +38,4 @@ val model = lr.fit(age)
 
 // model.coefficients // check out the coefficients
 // model.intercept //intercept
+// model.transform(age.select("age")).show //make a prediction on the data

@@ -23,29 +23,26 @@ Add JAVA_HOME to environment variables
 #####Scala (2.11.7)
 Download from [scala download page](http://www.scala-lang.org/download/install.html) and unpack. Then move somewhere safe - '/usr/local/share/' seems to be the default location for this kind of thing.  
 `tar -xzf scalaVersionNumber.tar.gz`  
-`mv scalaVersionNumber /usr/local/share/scalaVersionNumber`  
+`mv scalaVersionNumber /usr/local/share/`  
 
 set SCALA_HOME variable in etc/environment  
 `echo "SCALA_HOME=/usr/local/share/scalaVersionNumber" >> /etc/environment`  
 
 Add scala bin to the path. Best place to put this is ~/.profile or ~/.bash_profile. 
-Still not clear on which one but note that if ~/.bash_profile exists bash won't read ~/.profile so I can never ever have a bash_profile.
+Still not clear on which one but note that if ~/.bash_profile exists bash won't read ~/.profile so I can never ever have a bash_profile.  
 `echo "$PATH=$PATH:$SCALA_HOME/bin" >> ~/.profile`
 
 #####Spark (1.6 for Hadoop 2.6)
 Similar installation instructions as for scala. [Download spark binaries](http://spark.apache.org/downloads.html), unpack them, and then move them somewhere safe.  
 `tar -xzf spark-VN`  
-Now move it somewhere safe.  
-`mv spark-VN /usr/local/share/spark-VN`  
+`mv spark-VN /usr/local/share/`  
 
 Set `SPARK_HOME` as environment variable  
 `echo "SPARK_HOME=/usr/local/share/sparkversionNumber" >> /etc/environment`  
 
 Add spark bin to the path.   
 `echo "$PATH=$PATH:$SPARK_HOME/bin" >> ~/.profile`  
-Check out what's inside the bin file.   
-`ls $SPARK_HOME/bin`  
-Lots of good stuff including spark-shell and spark-submit. That's mostly what we'll be using.  
+Lots of good stuff inside the bin file `$SPARK_HOME/bin` including spark-shell and spark-submit. That's mostly what we'll be using.  
 
-You should be up and running now. Since you added Spark's bin to the path can just run `spark-shell` to access the shell. *There are some errors... Next step: GET RID OF THEM *
+You should be up and running now. Since you added Spark's bin to the path can just run `spark-shell` to access the shell. *There are some errors when spark-shell starts... Next step: GET RID OF THEM*
 

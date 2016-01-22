@@ -34,21 +34,13 @@ while following along with the book and its accompanying source code.
 
 https://github.com/stevencarlislewalker/sparkLearn/blob/master/notes/LocalSparkInstallOnUbuntu.md
 
-##### Cloudera
-
-DONE for steve (for ben [see here](https://github.com/stevencarlislewalker/sparkLearn/blob/master/notes/LocalSparkInstallOnUbuntu.md))
-
-outline of how we did it:
+##### Using the Cloudera framework
 
 1. cloudera virtual box
 2. comes with lots of big data tools, including spark etc...
 3. `spark-shell` is on the path (not `spark`)
 4. if we can't find `sqlContext`, diagnose with cloudera browser-based tools
 5. where's `scala`??
-
-##### DIY (e.g. from some ubuntu thing)
-
-FIXME: in progress
 
 #### Get census into a data frame
 

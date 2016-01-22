@@ -30,6 +30,10 @@ while following along with the book and its accompanying source code.
 
 #### Get spark-shell working
 
+#### The easiest approach
+
+https://github.com/stevencarlislewalker/sparkLearn/blob/master/notes/LocalSparkInstallOnUbuntu.md
+
 ##### Cloudera
 
 DONE for steve (for ben [see here](https://github.com/stevencarlislewalker/sparkLearn/blob/master/notes/LocalSparkInstallOnUbuntu.md))

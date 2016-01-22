@@ -15,14 +15,7 @@ Note that mllib is the base library and ml and mllib are subpackages of it.
 - ml is newer and "WILL BE" better than mllib. Supports dataframes and API is set up for pipelines but not as developed. 
 - mllib is older. Supports RDDs. Development is shifting away from it but at the moment (1/2016) seems more developed.
 
-```
-If this is your first time using the Spark shell (or any Scala REPL, for that matter), you
-should run the :help command to list available commands in the shell. :history
-and :h? can be helpful for finding the names that you gave to variables or functions
-that you wrote during a session but can’t seem to find at the moment. :paste can help
-you correctly insert code from the clipboard—something you may well want to do
-while following along with the book and its accompanying source code.
-```
+[Logistic regression theory in the context of Spark](http://www.slideshare.net/dbtsai/2014-0620-mlor-36132297)
 
 #### Misc problems
 

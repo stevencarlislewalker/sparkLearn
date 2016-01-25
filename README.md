@@ -2,6 +2,14 @@
 
 Figuring out logistic regression and decision trees in spark.
 
+#### Current tasks (for before Thursday?)
+
+1. Build decision tree and see what features are available.
+2. Think about what it means to build a decision tree one node at a time (e.g. can we find the tree structure?).
+3. Time logistic regression with all variables and x-times as many rows.
+4. Understand attributes -- e.g. coding categorical variables, and how to go back between strings and index columns.
+5. Build spark natively on windows (not quite for right now ... but soon?).
+
 #### Resources
 
 [Spark MLlib (1.6.0) Documentation](http://spark.apache.org/docs/latest/mllib-guide.html)    

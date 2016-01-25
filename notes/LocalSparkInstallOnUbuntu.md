@@ -35,7 +35,7 @@ export SPARK_HOME=/usr/local/share/sparkversionNumber
 Add spark bin to the path.   
 export PATH="$PATH:$SCALA_HOME/bin:$SPARK_HOME/bin" 
 ````
-Restart the shell or `source ~./bash_rc`.
+Restart the shell or `source ~/.bash_rc`.
 
 You should be up and running now. Since everyting was added to the path you can run them using their name (java, scala, spark-*). Eg., can just run `spark-shell` to access the shell. *There are some errors... Next step: GET RID OF THEM *
 

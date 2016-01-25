@@ -1,5 +1,6 @@
 import org.apache.spark.sql.DataFrame
 import org.apache.spark.ml.feature.{StringIndexer, IndexToString}
+import org.apache.spark.ml.feature.VectorAssembler
 import org.apache.spark.mllib.linalg.{Vector, Vectors}
 import org.apache.spark.sql.types._
 import org.apache.spark.sql.Row

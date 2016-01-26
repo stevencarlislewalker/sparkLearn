@@ -1,6 +1,4 @@
-# sparkLearn
-
-Figuring out logistic regression and decision trees in spark.
+# Figuring out logistic regression and decision trees in spark.
 
 #### Current tasks (for before Thursday?)
 

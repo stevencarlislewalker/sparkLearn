@@ -2,6 +2,7 @@ import org.apache.spark.sql.DataFrame
 import org.apache.spark.ml.feature.{StringIndexer, IndexToString}
 import org.apache.spark.ml.feature.VectorAssembler
 import org.apache.spark.mllib.linalg.{Vector, Vectors}
+import org.apache.spark.features.VectorAssembler
 import org.apache.spark.sql.types._
 import org.apache.spark.sql.Row
 import sqlContext.implicits._
@@ -24,8 +25,8 @@ val cats = List("workclass", "education", "marital-status", "sex") //categorical
 val num = List("age") // numeric (continuous)
 val label = "Response" // dependent variable
 
-// takes a row, and integer index of column entries and returns a list of doubles corresponding to those entries
 // Replaced by VectorAssembler
+// takes a row, and integer index of column entries and returns a list of doubles corresponding to those entries
 // def toVector(row:Row, index:List[Int]):Vector = {
 //     val schema = row.schema
 

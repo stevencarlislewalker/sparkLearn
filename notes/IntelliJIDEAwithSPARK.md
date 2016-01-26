@@ -17,4 +17,4 @@ mkdir -p src/{main,test}/{java,resources,scala}
 - For Windows Only. Even though we are running this on a local machine Spark tries to talk with Hadoop which can be an issue on Windows. The workaround is to download [winutils.exe](http://social.msdn.microsoft.com/Forums/windowsazure/en-US/28a57efb-082b-424b-8d9e-731b1fe135de/please-read-if-experiencing-job-failures?forum=hdinsight) and put `winutils.exe` in some folder `filepath/bin`. Then in your Scala main method add the line
 ```` System.setProperty("hadoop.home.dir", "filepath") ````
 
-- Construct a new Scala Class and run it. See [sampleApp]() for an example. This should also clarify the previous step.
+- Construct a new Scala Class and run it. See [sampleApp](https://github.com/stevencarlislewalker/sparkLearn/blob/master/snippets/buildTools/SampleApp.scala) for an example. This should also clarify the previous step.

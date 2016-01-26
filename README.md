@@ -48,16 +48,21 @@ The basic idea is to call `spark-shell` with the `--packages` option. See [here]
 
 #### Development environment / workflow setup
 
-##### Use Eclipse
+##### Using Eclipse
 
 Don't know how to incorporate spark and scala from centos with eclipse and its scala plugin but this a very helpful [writeup](http://www.nodalpoint.com/development-and-deployment-of-spark-applications-with-scala-eclipse-and-sbt-part-1-installation-configuration/) on how to set up a development framework using eclipse, scala, spark, and sbt. It requires a fresh install of spark -- seems unnecessary since spark is already installed on centos.
 
-**Sbt**:
-sbt stands for simple build tool - I believe it's a way of building scala (and maybe spark) projects. Have to specify dependencies and structure.
+##### Using Emacs
 
-The website is http://www.scala-sbt.org/0.13/docs/Installing-sbt-on-Linux.html. Centos is redhat so just run
+FIXME:  this is not quite right / not very general
 
-curl https://bintray.com/sbt/rpm/rpm | sudo tee /etc/yum.repos.d/bintray-sbt-rpm.repo
+```bash
+git clone https://github.com/scala/scala-tool-support.git
+export PATH=$PATH:~/scala/build/quick/bin
+```
 
-sudo yum install sbt
-
+```lisp
+(add-to-list 'load-path "~/scala-dist/scala-tool-support/tool-support/emacs")
+(add-to-list 'load-path "~/scala/build/quick/bin")
+(require 'scala-mode-auto)
+```

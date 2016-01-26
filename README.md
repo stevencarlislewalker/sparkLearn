@@ -26,7 +26,7 @@ Note that mllib is the base library and ml and mllib are subpackages of it.
 
 #### Get spark-shell working
 
-#### The easiest approach
+##### The easiest approach
 
 https://github.com/stevencarlislewalker/sparkLearn/blob/master/notes/LocalSparkInstallOnUbuntu.md
 
@@ -39,12 +39,6 @@ Ugh...
 3. `spark-shell` is on the path (not `spark`)
 4. if we can't find `sqlContext`, diagnose with cloudera browser-based tools
 5. where's `scala`??
-
-##### Using `spark-csv` library
-
-[spark-csv](https://github.com/databricks/spark-csv)
-
-The basic idea is to call `spark-shell` with the `--packages` option. See [here](https://github.com/stevencarlislewalker/sparkLearn/blob/master/notes/Localspark-csv.md) for notes on how to do this on a local spark-shell.
 
 #### Development environment / workflow setup
 

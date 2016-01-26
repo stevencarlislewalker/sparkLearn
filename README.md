@@ -19,9 +19,10 @@ Note that mllib is the base library and ml and mllib are subpackages of it.
 
 [Logistic regression theory in the context of Spark](http://www.slideshare.net/dbtsai/2014-0620-mlor-36132297)
 
-#### Misc problems
+#### Misc problems/solutions
 
 * Endless [Application report](http://stackoverflow.com/questions/30828879/application-report-for-application-state-accepted-never-ends-for-spark-submi) -- FIXME: try restarting all cloudera services
+* http://www.howtogeek.com/187535/how-to-copy-and-paste-between-a-virtualbox-host-machine-and-a-guest-machine/
 
 #### Get spark-shell working
 
@@ -31,17 +32,13 @@ https://github.com/stevencarlislewalker/sparkLearn/blob/master/notes/LocalSparkI
 
 ##### Using the Cloudera framework
 
+Ugh...
+
 1. cloudera virtual box
 2. comes with lots of big data tools, including spark etc...
 3. `spark-shell` is on the path (not `spark`)
 4. if we can't find `sqlContext`, diagnose with cloudera browser-based tools
 5. where's `scala`??
-
-#### Get census into a data frame
-
-1. Manage the distributed file system -- e.g. [putCensusOnHDFS](https://github.com/stevencarlislewalker/sparkLearn/blob/master/snipets/putCensusOnHDFS)
-2. Get CSV from distributed file system into an RDD [loadCensus.scala](https://github.com/stevencarlislewalker/sparkLearn/blob/master/snipets/loadCensus.scala)
-3. (TODO) Convert RDD to DataFrame (e.g. http://spark.apache.org/docs/latest/sql-programming-guide.html#programmatically-specifying-the-schema)
 
 ##### Using `spark-csv` library
 
@@ -63,21 +60,4 @@ The website is http://www.scala-sbt.org/0.13/docs/Installing-sbt-on-Linux.html. 
 curl https://bintray.com/sbt/rpm/rpm | sudo tee /etc/yum.repos.d/bintray-sbt-rpm.repo
 
 sudo yum install sbt
-
-#### Load in our test data set
-
-* (DONE) We only need one -- Census.
-* (DONE) Can we just drag and drop to the VM?  I think so -- yes definitely. [http://www.howtogeek.com/187535/how-to-copy-and-paste-between-a-virtualbox-host-machine-and-a-guest-machine/]
-* Do this as a spark DataFrame?
-
-#### Try out logistic regression
-
-#### Try out decision trees
-
-#### Writing compiled Spark programs
-
-[spark-submit](http://spark.apache.org/docs/latest/submitting-applications.html)
-
-1. What we want from this:  Make deployed Spark apps
-2. Task:  understand dependencies for building spark/scala standalones (i.e. what is spark exactly?  is it just a 'package' for scala?
 

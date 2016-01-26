@@ -5,10 +5,14 @@
 
 import org.apache.spark.sql.SQLContext
 
-// CHANGE to file path of CSV file of your choice
-val filePath = "/home/ben/Documents/phoenix/sparkLearn/data/Census.csv"
+// who goes there?
+val filePath = if(sys.env("LOGNAME") == "steve") {
+  "/home/steve/sparkLearn/data/Census.csv";
+} else {
+  "/home/ben/Documents/phoenix/sparkLearn/data/Census.csv";
+}
 
 val census = sqlContext.read.format("com.databricks.spark.csv")  
             .option("header", "true") // Use first line of all files as header
             .option("inferSchema", "true") // Automatically infer data types 
-            .load(filePath) 
+            .load(filePath)

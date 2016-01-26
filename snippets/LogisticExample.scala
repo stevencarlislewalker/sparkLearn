@@ -1,7 +1,7 @@
 // Build a logistic regression. Assumes that we have a data frame in
 // the correct form. Specifically of the form (label, features) with
-// those names corresponding to those columns. The pipeline of scripts to
-// run is readInCSV.scala, then catToNumerica.scala, and then this.
+// those names corresponding to those columns. The pipeline of scripts
+// to run is readInCSV.scala, then catToNumerica.scala, and then this.
 
 import org.apache.spark.ml.classification.LogisticRegression
 

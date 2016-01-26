@@ -7,11 +7,19 @@ import org.apache.spark.sql.Row
 import sqlContext.implicits._
 import org.apache.spark.mllib.regression.LabeledPoint
 
-// This script is meant to get a data frame into a form that can be fed into an mllib model. That means that all categorical data (strings) are encoded as doubles - Eg., ("Yes"/ "No") ==> (0/1). And that it ends up as a data frame of LabeledPoints.
+// This script is meant to get a data frame into a form that can be
+// fed into an mllib model. That means that all categorical data
+// (strings) are encoded as doubles - Eg., ("Yes"/ "No") ==> (0/1). And
+// that it ends up as a data frame of LabeledPoints.
 
-// the starting data frame is named census which we constructed in readInCSV.scala. Assumes we already have this data frame in spark-shell.
+// the starting data frame is named census which we constructed in
+// readInCSV.scala. Assumes we already have this data frame in
+// spark-shell.
 
-// names of columns we want to select for. Change these if the data frame is different than census or you want to select different columns.
+// names of columns we want to select for. Change these if the data
+// frame is different than census or you want to select different
+// columns.
+
 val cats = List("workclass", "education", "marital-status", "sex") //categorical
 val num = List("age") // numeric (continuous)
 val label = "Response" // dependent variable

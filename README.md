@@ -1,4 +1,4 @@
-# Figuring out logistic regression and decision trees in spark.
+# Figuring out Spark -- one step at a time
 
 #### Current tasks (for before Thursday?)
 

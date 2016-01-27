@@ -7,7 +7,7 @@
 		revision="1.0"
 		conf="compile"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20160126093537"/>
+		date="20160127114901"/>
 	<dependencies>
 		<module organisation="com.databricks" name="spark-csv_2.10">
 			<revision name="1.3.0" status="release" pubdate="20151120155620" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/databricks/spark-csv" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="150">
@@ -498,6 +498,8 @@
 				<caller organisation="org.scala-lang" name="scala-compiler" conf="compile, runtime" rev="2.10.0" rev-constraint-default="2.10.0" rev-constraint-dynamic="2.10.0" callerrev="2.10.0"/>
 				<caller organisation="com.fasterxml.jackson.module" name="jackson-module-scala_2.10" conf="compile, runtime" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="2.4.4"/>
 				<caller organisation="org.scalanlp" name="breeze-macros_2.10" conf="compile, runtime" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="0.11.2"/>
+				<caller organisation="org.spire-math" name="spire_2.10" conf="compile, runtime" rev="2.10.2" rev-constraint-default="2.10.2" rev-constraint-dynamic="2.10.2" callerrev="0.7.4"/>
+				<caller organisation="org.spire-math" name="spire-macros_2.10" conf="compile, runtime" rev="2.10.2" rev-constraint-default="2.10.2" rev-constraint-dynamic="2.10.2" callerrev="0.7.4"/>
 				<artifacts>
 				</artifacts>
 			</revision>
@@ -513,9 +515,6 @@
 				<evicted-by rev="2.10.5"/>
 				<caller organisation="org.scalamacros" name="quasiquotes_2.10" conf="compile" rev="2.10.3" rev-constraint-default="2.10.3" rev-constraint-dynamic="2.10.3" callerrev="2.0.0-M8"/>
 				<caller organisation="org.scalamacros" name="quasiquotes_2.10" conf="compile, runtime" rev="2.10.3" rev-constraint-default="2.10.3" rev-constraint-dynamic="2.10.3" callerrev="2.0.0"/>
-				<caller organisation="org.scala-lang" name="scala-compiler" conf="compile, runtime" rev="2.10.0" rev-constraint-default="2.10.0" rev-constraint-dynamic="2.10.0" callerrev="2.10.0"/>
-				<caller organisation="com.fasterxml.jackson.module" name="jackson-module-scala_2.10" conf="compile, runtime" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="2.4.4"/>
-				<caller organisation="org.scalanlp" name="breeze-macros_2.10" conf="compile, runtime" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="0.11.2"/>
 				<caller organisation="org.spire-math" name="spire_2.10" conf="compile, runtime" rev="2.10.2" rev-constraint-default="2.10.2" rev-constraint-dynamic="2.10.2" callerrev="0.7.4"/>
 				<caller organisation="org.spire-math" name="spire-macros_2.10" conf="compile, runtime" rev="2.10.2" rev-constraint-default="2.10.2" rev-constraint-dynamic="2.10.2" callerrev="0.7.4"/>
 				<artifacts>
@@ -2141,7 +2140,7 @@
 				<caller organisation="org.apache.hadoop" name="hadoop-common" conf="compile, runtime" rev="1.7.4" rev-constraint-default="1.7.4" rev-constraint-dynamic="1.7.4" callerrev="2.2.0"/>
 				<caller organisation="org.apache.avro" name="avro-ipc" conf="compile, runtime" rev="1.7.7" rev-constraint-default="1.7.7" rev-constraint-dynamic="1.7.7" callerrev="1.7.7"/>
 				<artifacts>
-					<artifact name="avro" type="jar" ext="jar" status="successful" details="" size="436303" time="2505" location="C:\Users\brifkind\.ivy2\cache\org.apache.avro\avro\jars\avro-1.7.7.jar">
+					<artifact name="avro" type="jar" ext="jar" status="no" details="" size="436303" time="0" location="C:\Users\brifkind\.ivy2\cache\org.apache.avro\avro\jars\avro-1.7.7.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/avro/avro/1.7.7/avro-1.7.7.jar"/>
 					</artifact>
 				</artifacts>
@@ -2240,15 +2239,14 @@
 			<revision name="1.8.3" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
 				<evicted-by rev="1.9.13"/>
 				<caller organisation="com.sun.jersey" name="jersey-json" conf="compile, runtime" rev="1.8.3" rev-constraint-default="1.8.3" rev-constraint-dynamic="1.8.3" callerrev="1.9"/>
-				<caller organisation="org.apache.hadoop" name="hadoop-common" conf="compile, runtime" rev="1.8.8" rev-constraint-default="1.8.8" rev-constraint-dynamic="1.8.8" callerrev="2.2.0"/>
 				<caller organisation="org.codehaus.jackson" name="jackson-xc" conf="compile, runtime" rev="1.8.3" rev-constraint-default="1.8.3" rev-constraint-dynamic="1.8.3" callerrev="1.8.3"/>
 				<caller organisation="org.codehaus.jackson" name="jackson-jaxrs" conf="compile, runtime" rev="1.8.3" rev-constraint-default="1.8.3" rev-constraint-dynamic="1.8.3" callerrev="1.8.3"/>
-				<caller organisation="org.apache.hadoop" name="hadoop-hdfs" conf="compile, runtime" rev="1.8.8" rev-constraint-default="1.8.8" rev-constraint-dynamic="1.8.8" callerrev="2.2.0"/>
 				<artifacts>
 				</artifacts>
 			</revision>
 			<revision name="1.8.8" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
 				<evicted-by rev="1.9.13"/>
+				<caller organisation="com.sun.jersey" name="jersey-json" conf="compile, runtime" rev="1.8.3" rev-constraint-default="1.8.3" rev-constraint-dynamic="1.8.3" callerrev="1.9"/>
 				<caller organisation="org.apache.hadoop" name="hadoop-common" conf="compile, runtime" rev="1.8.8" rev-constraint-default="1.8.8" rev-constraint-dynamic="1.8.8" callerrev="2.2.0"/>
 				<caller organisation="org.apache.hadoop" name="hadoop-hdfs" conf="compile, runtime" rev="1.8.8" rev-constraint-default="1.8.8" rev-constraint-dynamic="1.8.8" callerrev="2.2.0"/>
 				<artifacts>

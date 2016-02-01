@@ -8,7 +8,8 @@ import org.apache.spark.sql.{DataFrame, SQLContext}
 import org.apache.spark.{SparkConf, SparkContext}
 
 
-class ReadInCSV(filePath:String = "c:\\Users\\brifkind\\Documents\\Angoss\\sparkLearn\\data\\Census.csv") {
+class ReadInCSV(filePath:String = "c:\\Users\\brifkind\\Documents\\Angoss\\sparkLearn\\data\\",
+               file:String = "Census.csv") {
 
     System.setProperty("hadoop.home.dir", "c:\\Users\\brifkind\\Winutils\\")
     Logger.getLogger("org").setLevel(Level.OFF)
@@ -24,7 +25,7 @@ class ReadInCSV(filePath:String = "c:\\Users\\brifkind\\Documents\\Angoss\\spark
       sqlContext.read.format("com.databricks.spark.csv")
         .option("header", "true") // Use first line of all files as header
         .option("inferSchema", "true") // Automatically infer data types
-        .load(filePath)
+        .load(filePath+file)
     }
 
 }

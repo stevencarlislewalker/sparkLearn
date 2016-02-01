@@ -26,6 +26,7 @@ class DataTransform(val independents: List[String] = List("age"),
 
   // convert all categories (including label) to numeric
   // index all input categorical columns from the data frame and append to the end of the data frame
+  // new columns are named as the old columns with _ending added on
   // return a data frame
   def indexCategorical(df: DataFrame, ending:String): DataFrame = {
 
@@ -35,7 +36,7 @@ class DataTransform(val independents: List[String] = List("age"),
       indexer.fit(df).transform(df_temp)
     }
 
-    // all categorical variables including response indexed
+    // all categorical variables including dependent variable are indexed
     (label :: cats.toList).foldLeft(df)((df_temp, arg) => oneIndexCategorical(df_temp, arg))
 
   }

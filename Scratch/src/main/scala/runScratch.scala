@@ -8,12 +8,13 @@ import org.apache.spark.mllib.tree.model.Node
 import org.apache.spark.rdd.RDD
 import org.apache.spark.sql.DataFrame
 import org.apache.spark.ml.classification.{DecisionTreeClassifier, DecisionTreeClassificationModel}
+import scala.sys.process._
 
 /**
   * Created by brifkind on 28/01/2016.
   */
 
-class SparkDocScratch {
+object runScratch {
 
   def runCode: (DataFrame, DecisionTree) = {
 
@@ -27,8 +28,8 @@ class SparkDocScratch {
     //    // Load the data stored in LIBSVM format as a DataFrame.
     //    val filePath: String = "c:\\Users\\brifkind\\Documents\\Angoss\\sparkLearn\\data\\sample_libsvm_data.txt"
     //    val data = sqlContext.read.format("libsvm").load(filePath)
-    val data = new ReadInCSV().readInCsvEasy
-    val train = new DataTransform(List("age", "sex", "relationship"), "Response", data).runIndexed
+    val data = new ReadInCSV(file = "sampleTree.csv").readInCsvEasy
+    val train = new DataTransform(List("f1", "f2"), "label", data).runIndexed
 
 
 
@@ -44,17 +45,17 @@ class SparkDocScratch {
     rdd
   }
 
+  def main(args: Array[String]) {
+    val filePath: String = "C:\\Users\\brifkind\\Documents\\Angoss\\sparkLearn\\treeDump\\"
+    val convertFile =
+      "C:\\Program Files (x86)\\Graphviz2.38\\bin\\dot.exe -Tpng " +
+       filePath + "temp" + " -o " + filePath + "temp.png"
+    convertFile.!
 
-  def printTree(prefix: String, node: Option[Node]) {
-    node match {
-      case Some(n) => {
-        println(prefix + "-" + n.id)
-        println(prefix + " " + "|")
-        printTree(prefix + " |", n.leftNode)
-        printTree(prefix + " |", n.rightNode)
-      }
-      case _ =>
-    }
+    val openFile =
+      "rundll32 \"C:\\Program Files (x86)\\Windows Photo Viewer\\PhotoViewer.dll\", ImageView_Fullscreen " +
+        filePath + "temp.png"
+    openFile.!
   }
 
 

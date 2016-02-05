@@ -1,13 +1,25 @@
 package CensusModeling
 
+import org.apache.log4j.{Level, Logger}
+import org.apache.spark.{SparkContext, SparkConf}
 import org.apache.spark.ml.attribute.{Attribute, AttributeGroup}
 import org.apache.spark.ml.classification.{DecisionTreeClassifier, DecisionTreeClassificationModel}
-import org.apache.spark.sql.DataFrame
+import org.apache.spark.sql.{SQLContext, DataFrame}
 
 /**
   * Created by brifkind on 28/01/2016.
   */
 object RunDecisionTree {
+
+
+  System.setProperty("hadoop.home.dir", "c:\\Users\\brifkind\\Winutils\\")
+  Logger.getLogger("org").setLevel(Level.OFF)
+  Logger.getLogger("akka").setLevel(Level.OFF)
+
+
+  val conf = new SparkConf().setAppName("Sample Application").setMaster("local[2]")
+  val sc = new SparkContext(conf)
+  val sqlContext = new SQLContext(sc)
 
 
   def runDecisionTree(independents: List[String],
@@ -31,7 +43,7 @@ object RunDecisionTree {
 
     // read in csv file
     val filePath: String = "c:\\Users\\brifkind\\Documents\\Angoss\\sparkLearn\\data\\Census.csv"
-    val data = (new ReadInCSV(filePath)).readInCsvEasy
+    val data = (new ReadInCSV(filePath)).readInCsvEasy(sqlContext)
 
     // request information about variables and number of times to run
     val independents = List("age", "sex") //readLine("What are the independent variables? ").split(" ").toList

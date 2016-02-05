@@ -174,5 +174,6 @@
     <orderEntry type="library" name="SBT: oro:oro:2.0.8:jar" level="project" />
     <orderEntry type="library" name="SBT: stax:stax-api:1.0.1:jar" level="project" />
     <orderEntry type="library" name="SBT: xmlenc:xmlenc:0.52:jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="SBT: org.scalatest:scalatest_2.10:2.0:jar" level="project" />
   </component>
 </module>

@@ -7,9 +7,9 @@ import org.apache.spark.sql.SQLContext
 
 // who goes there?
 val filePath = if(sys.env("LOGNAME") == "steve") {
-  "/home/steve/sparkLearn/data/Census.csv";
+  "/home/steve/sparkLearn/data/Census.csv"
 } else {
-  "/home/ben/Documents/phoenix/sparkLearn/data/Census.csv";
+  "/home/ben/Documents/phoenix/sparkLearn/data/Census.csv"
 }
 
 val census = sqlContext.read.format("com.databricks.spark.csv")  

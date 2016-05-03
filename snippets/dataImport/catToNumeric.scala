@@ -2,7 +2,7 @@ import org.apache.spark.sql.DataFrame
 import org.apache.spark.ml.feature.{StringIndexer, IndexToString}
 import org.apache.spark.ml.feature.VectorAssembler
 import org.apache.spark.mllib.linalg.{Vector, Vectors}
-import org.apache.spark.features.VectorAssembler
+import org.apache.spark.ml.feature.VectorAssembler
 import org.apache.spark.sql.types._
 import org.apache.spark.sql.Row
 import sqlContext.implicits._
@@ -21,12 +21,20 @@ import org.apache.spark.mllib.regression.LabeledPoint
 // frame is different than census or you want to select different
 // columns.
 
-val cats = List("workclass", "education", "marital-status", "sex") //categorical
-val num = List("age") // numeric (continuous)
+val cats = List("workclass", 
+		"education", 
+		"marital-status", 
+		"sex", 
+	        "occupation",
+		"relationship") // categorical
+val num = List("age", "hours-per-week") // numeric (continuous)
 val label = "Response" // dependent variable
 
 // Replaced by VectorAssembler
-// takes a row, and integer index of column entries and returns a list of doubles corresponding to those entries
+
+// takes a row, and integer index of column entries and returns a list
+// of doubles corresponding to those entries
+
 // def toVector(row:Row, index:List[Int]):Vector = {
 //     val schema = row.schema
 
@@ -65,5 +73,4 @@ val assembler = new VectorAssembler()
 
 val censusDF = assembler.transform(census_cats.select(
 		label + "_index", indep_index:_*))
-
 

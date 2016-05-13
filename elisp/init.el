@@ -63,10 +63,6 @@
 ;; ----------------------------------------------------------------------
 
 ;; ----------------------------------------------------------------------
-;; mydir-
-;;
-;; light-weight homemade 'favourites'
-;; ----------------------------------------------------------------------
 
 ;; ----------------------------------------------------------------------
 ;; Brilliant:
@@ -86,22 +82,6 @@
            (ess-arg-function-offset-new-line . '(4))
                ))
 (setq ess-default-style 'my-style)
-
-
-(defun mydir-ppg ()
-  (interactive)
-  (find-file (concat "//ca3answcmgr02/ClientData/PPG/Work/Services/")))
-
-(defun mydir-content-manager ()
-  (interactive)
-  (find-file (concat "//ca3answcmgr02/ClientData/")))
-
-(defun mydir-notes ()
-  (interactive)
-  (find-file (concat "~/Documents/notes/")))
-
-
-
 
 ;; (setq paragraph-start
 ;;       '("\f\\|[ \t]*$\\|[ \t]*[*+-] \\|[ \t]*[0-9]+\\.\\|[ \t]*: "))
